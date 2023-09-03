@@ -36,10 +36,9 @@ html,body{
                     box-sizing: border-box;
                     padding: 15px;
                     overflow-y:scroll;
-
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     align-content: flex-start;
                     // display: grid;
                     // grid-template-columns: repeat(3, 1fr);
@@ -90,3 +89,52 @@ html,body{
     }
 }
 
+
+@media screen and (max-width: 1024px) {
+    
+    .carousel-container{
+
+        .swiper{
+            width: 90%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .carousel-container{
+
+        .swiper{
+            width: 95%;
+
+            .swiper-wrapper{
+
+                .swiper-slide{
+
+                    .container{
+                        padding: 10px;
+
+                        .product{
+
+                            img{
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .carousel-container{
+
+        .swiper{
+            width: 100%;
+        }
+    }
+}

@@ -1,9 +1,11 @@
-const sliderContainer = document.querySelectorAll(".container") 
+const sliderContainer = document.querySelectorAll(".container")
+
+
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    // Optional parameters  mobile(1.5), tablet(2.5), desktop(3)
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1.5,
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
@@ -13,6 +15,15 @@ const swiper = new Swiper('.swiper', {
         depth: 150,        
         stretch: 0,
         scale: 1
+    },
+
+    breakpoints:{
+      769:{
+        slidesPerView: 3,
+      },
+      426:{
+        slidesPerView: 2.5,
+      }
     },
   
     pagination: {

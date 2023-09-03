@@ -36,7 +36,7 @@ html, body {
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: flex-start;
 }
 .carousel-container .swiper .swiper-wrapper .swiper-slide .container .product {
@@ -68,4 +68,27 @@ html, body {
 }
 .carousel-container .swiper-container .swiper-pagination {
   width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-container .swiper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-container .swiper {
+    width: 95%;
+  }
+  .carousel-container .swiper .swiper-wrapper .swiper-slide .container {
+    padding: 10px;
+  }
+  .carousel-container .swiper .swiper-wrapper .swiper-slide .container .product img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .carousel-container .swiper {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style02.css.map */
